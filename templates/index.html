@@ -9,17 +9,34 @@
     <h1>Contact Us</h1>
     <form>
         <div>
-            <label for=""></label>
-            <input type="text" id="" name=""></input>
+            <label for="f_name">First Name</label>
+            <input type="text" id="f_name" name="f_name" placeholder="John"></input>
         </div>
         <div>
-            <label for=""></label>
-            <input type="text" id="" name=""></input>
+            <label for="l_name">Last Name</label>
+            <input type="text" id="l_name" name="l_name" placeholder="Doe"></input>
         </div>
         <div>
-            <label for=""></label>
-            <textarea id="" name=""></textarea>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="youremail@site.com"></input>
         </div>
+        <div>
+            <label for="query_type">Query Type</label>
+            <select id="query_type" name="query_type">
+                <option value="" disabled selected hidden>Please select a query type</option>
+                <option value="general">General Enquiry</option>
+                <option value="support">Support Request</option>
+            </select>
+        </div>
+        <div>
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="This field is required..."></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="consent" name="consent" value="yes" checked />
+            <label for="consent">I consent to being contacted by the team</label>
+        </div>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
